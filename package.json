@@ -1,0 +1,38 @@
+{
+  "name": "RestApi-with-Expressjs-and-Nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "dev": "LOG_LEVEL=debug nodemon app.js | ./node_modules/.bin/pino-pretty",
+    "lowLevelDebug": "LOG_LEVEL=debug DEBUG=express:* nodemon app.js | ./node_modules/.bin/pino-pretty",
+    "lover": "LOG_LEVEL=debug DEBUG=express:* nodemon app.js | ./node_modules/.bin/pino-pretty",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-paginate": "^1.0.2",
+    "express-pino-logger": "^6.0.0",
+    "express-useragent": "^1.0.15",
+    "express-validator": "^6.9.2",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.15",
+    "nodemailer": "^6.4.17",
+    "pino": "^6.11.0",
+    "socket.io": "^3.1.1"
+  },
+  "devDependencies": {
+    "pino-pretty": "^4.5.0"
+  }
+}
